@@ -1,0 +1,223 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Samples for Autoencoder based Music Translation</title>
+    <style type="text/css">
+body, input, select, td, li, div, textarea, p {
+	font-size: 11px;
+	line-height: 16px;
+	font-family: verdana, arial, sans-serif;
+}
+
+body {
+	margin:5px;
+	background-color:white;
+}
+
+h1 {
+	font-size:16px;
+	font-weight:bold;
+}
+
+h2 {
+	font-size:14px;
+	font-weight:bold;
+}
+    </style>
+  </head>
+
+  <body>
+    <h1 align="center"> Out of Domain Samples for Autoencoder based Music Translation </h1>
+    <h2>Introduction</h2>
+    <p> In the following supplementary, we present the output of our method on out of domain samples. <br/>
+        Each row is a different sample. For each sample, we present the input domain, input sample, target domain and the output. </p>
+
+    <h2>Results</h2>
+    <table>
+       <col width="300">
+       <col width="300">
+       <col width="300">
+       <col width="300">
+       <thead>
+          <tr>
+             <th>Input Domain</th>
+             <th>Input</th>
+             <th>Target Domain</th>
+             <th>Output</th>
+          </tr>
+       </thead>
+       <tbody>
+          <tr/>
+          <tr>
+              <td align="center">
+                 Opera<a href="#section1">[1]</a>
+              </td>
+              <td>
+                 <audio controls="">
+                    <source src="samples/musopen/magic_opera_input.wav" type="audio/wav">
+                 </audio>
+              </td>
+              <td align="center">
+                 Bach_Solo_Piano
+              </td>
+              <td>
+                <audio controls="">
+                   <source src="samples/musopen/magic_opera_piano_output.wav" type="audio/wav">
+                </audio>
+              </td>
+          </tr>
+          <tr>
+              <td align="center">
+                 Wind Band<a href="#section2">[2]</a>
+              </td>
+              <td>
+                 <audio controls="">
+                    <source src="samples/musopen/stars_input.wav" type="audio/wav">
+                 </audio>
+              </td>
+              <td align="center">
+                 Bach_Solo_Piano
+              </td>
+              <td>
+                <audio controls="">
+                   <source src="samples/musopen/stars_piano_output.wav" type="audio/wav">
+                </audio>
+              </td>
+          </tr>
+          <tr>
+              <td align="center">
+                 Guitar<a href="#section3">[3]</a>
+              </td>
+              <td>
+                 <audio controls="">
+                    <source src="samples/musopen/guitar_input.wav" type="audio/wav">
+                 </audio>
+              </td>
+              <td align="center">
+                 Bach_Solo_Cello
+              </td>
+              <td>
+                <audio controls="">
+                   <source src="samples/musopen/guitar_celloOutput.wav" type="audio/wav">
+                </audio>
+              </td>
+          </tr>
+          <tr>
+              <td align="center">
+                 Whistle
+              </td>
+              <td>
+                 <audio controls="">
+                    <source src="samples/whistles/1.wav" type="audio/wav">
+                 </audio>
+              </td>
+              <td align="center">
+                 Beethoven_String_Quartet
+              </td>
+              <td>
+                <audio controls="">
+                   <source src="samples/whistles/1_5.wav" type="audio/wav">
+                </audio>
+              </td>
+          </tr>
+          <tr>
+              <td align="center">
+                 Whistle
+              </td>
+              <td>
+                 <audio controls="">
+                    <source src="samples/whistles/0.wav" type="audio/wav">
+                 </audio>
+              </td>
+              <td align="center">
+                 Mozart_Symphony
+              </td>
+              <td>
+                <audio controls="">
+                   <source src="samples/whistles/0_2.wav" type="audio/wav">
+                </audio>
+              </td>
+          </tr>
+          <tr>
+              <td align="center">
+                 Hand Clapping
+              </td>
+              <td>
+                 <audio controls="">
+                    <source src="samples/clapping/6.wav" type="audio/wav">
+                 </audio>
+              </td>
+              <td align="center">
+                 Cambini_Wind_Quintet
+              </td>
+              <td>
+                <audio controls="">
+                   <source src="samples/clapping/6_2.wav" type="audio/wav">
+                </audio>
+              </td>
+          </tr>
+          <tr>
+              <td align="center">
+                 Hand Clapping
+              </td>
+              <td>
+                 <audio controls="">
+                    <source src="samples/clapping/6.wav" type="audio/wav">
+                 </audio>
+              </td>
+              <td align="center">
+                 Bach_Solo_Piano
+              </td>
+              <td>
+                <audio controls="">
+                   <source src="samples/clapping/6_3.wav" type="audio/wav">
+                </audio>
+              </td>
+          </tr>
+          <tr>
+              <td align="center">
+                 MIDI of "Little Hans" (S2)
+              </td>
+              <td>
+                 <audio controls="">
+                    <source src="../S2/src/Hanschen_Klein.wav" type="audio/wav">
+                 </audio>
+              </td>
+              <td align="center">
+                 Beethven Solo Piano
+              </td>
+              <td>
+                <audio controls="">
+                   <source src="../S2/translation/A/0/Hanschen_Klein.wav" type="audio/wav">
+                </audio>
+              </td>
+          </tr>
+          <tr>
+              <td align="center">
+                 MIDI of "Little Hans" (S2)
+              </td>
+              <td>
+                 <audio controls="">
+                    <source src="../S2/src/Hanschen_Klein.wav" type="audio/wav">
+                 </audio>
+              </td>
+              <td align="center">
+                 Bach Solo Piano
+              </td>
+              <td>
+                <audio controls="">
+                   <source src="../S2/translation/A/1/Hanschen_Klein.wav" type="audio/wav">
+                </audio>
+              </td>
+          </tr>
+       </tbody>
+    </table>
+    <br/>
+    <br/>
+    <br/>
+
+    <p id="section1">[1] "The Magic Flute K. 620 - Act 2. c. Der Holle Rache kocht in meinem Herzen", performed by European Archive, https://musopen.org/music/2714-the-magic-flute-k-620/.</p>
+    <p id="section2">[2] "Stars and Stripes", performed by Oldham Music Centre Youth Wind Band, https://musopen.org/music/43792-the-stars-and-stripes-forever/.</p>
+    <p id="section3">[3] "Don Perez Freire" performed by Edson Lopes, https://musopen.org/music/13018-don-perez-freire-tango/.</p>
+  </body>
+</html>

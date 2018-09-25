@@ -1,0 +1,2163 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Samples for Autoencoder based Music Translation</title>
+    <style type="text/css">
+body, input, select, td, li, div, textarea, p {
+	font-size: 11px;
+	line-height: 16px;
+	font-family: verdana, arial, sans-serif;
+}
+
+body {
+	margin:5px;
+	background-color:white;
+}
+
+h1 {
+	font-size:16px;
+	font-weight:bold;
+}
+
+h2 {
+	font-size:14px;
+	font-weight:bold;
+}
+    </style>
+  </head>
+
+  <body>
+    <h1 align="center"> Samples for Autoencoder based Music Translation </h1>
+    <h2>Introduction</h2>
+    <p> Each example is a different source domain (instrument). Each column is a different target domain. The red columns are original through the encoder and the decoder of the same.</p>
+
+
+    <h2>Example for source domain: Bach Solo Cello </h2>
+    <div>
+      <table border = "1" class="inlineTable">
+        <col width="50">
+
+        <col width="200">
+
+        <col width="200">
+
+        <col width="200">
+
+        <col width="200">
+
+        <col width="200">
+
+        <col width="200">
+
+        <col width="200">
+        <tr>
+          <th/>
+          <th/>
+          <th colspan="6">Target</th>
+        </tr>
+        <tr>
+             <th/>
+             <th>Original</th>
+
+             <th>Bach_Solo_Cello</th>
+
+             <th>Beethoven_Solo_Piano</th>
+
+             <th>Cambini_Wind_Quintet</th>
+
+             <th>Bach_Solo_Piano</th>
+
+             <th>Beethoven_Accompanied_Violin</th>
+
+             <th>Beethoven_String_Quartet</th>
+        </tr>
+
+        <tr>
+           <th> 1 </th>
+           <td>
+
+             <audio controls style="width: 150px;">
+               <source src=0/0.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td bgcolor="#FF0000">
+
+             <audio controls style="width: 150px;">
+               <source src=0/0_0.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+
+             <audio controls style="width: 150px;">
+               <source src=0/0_1.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+
+             <audio controls style="width: 150px;">
+               <source src=0/0_2.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+           <td>
+            <audio controls style="width: 150px;">
+              <source src=0/0_3.wav type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+          </td>
+
+
+            <td>
+
+             <audio controls style="width: 150px;">
+               <source src=0/0_4.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+
+             <audio controls style="width: 150px;">
+               <source src=0/0_5.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+        </tr>
+
+        <tr>
+          <th> 2 </th>
+           <td>
+
+             <audio controls style="width: 150px;">
+               <source src=0/1.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td bgcolor="#FF0000">
+
+             <audio controls style="width: 150px;">
+               <source src=0/1_0.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+
+             <audio controls style="width: 150px;">
+               <source src=0/1_1.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+
+             <audio controls style="width: 150px;">
+               <source src=0/1_2.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+           <td>
+            <audio controls style="width: 150px;">
+              <source src=0/1_3.wav type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+           </td>
+
+            <td>
+
+             <audio controls style="width: 150px;">
+               <source src=0/1_4.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+
+             <audio controls style="width: 150px;">
+               <source src=0/1_5.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+        </tr>
+
+        <tr>
+          <th> 3 </th>
+           <td>
+
+             <audio controls style="width: 150px;">
+               <source src=0/2.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td bgcolor="#FF0000">
+
+             <audio controls style="width: 150px;">
+               <source src=0/2_0.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+
+             <audio controls style="width: 150px;">
+               <source src=0/2_1.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+
+             <audio controls style="width: 150px;">
+               <source src=0/2_2.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+           <td>
+            <audio controls style="width: 150px;">
+              <source src=0/2_3.wav type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+           </td>
+
+
+            <td>
+
+             <audio controls style="width: 150px;">
+               <source src=0/2_4.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+
+             <audio controls style="width: 150px;">
+               <source src=0/2_5.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+        </tr>
+
+        <tr>
+          <th> 4 </th>
+           <td>
+
+             <audio controls style="width: 150px;">
+               <source src=0/3.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td bgcolor="#FF0000">
+
+             <audio controls style="width: 150px;">
+               <source src=0/3_0.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+
+             <audio controls style="width: 150px;">
+               <source src=0/3_1.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+
+             <audio controls style="width: 150px;">
+               <source src=0/3_2.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+           <td>
+            <audio controls style="width: 150px;">
+              <source src=0/3_3.wav type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+           </td>
+
+            <td>
+
+             <audio controls style="width: 150px;">
+               <source src=0/3_4.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+
+             <audio controls style="width: 150px;">
+               <source src=0/3_5.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+        </tr>
+
+        <tr>
+          <th> 5 </th>
+           <td>
+
+             <audio controls style="width: 150px;">
+               <source src=0/4.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td bgcolor="#FF0000">
+             <audio controls style="width: 150px;">
+               <source src=0/4_0.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+
+             <audio controls style="width: 150px;">
+               <source src=0/4_1.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+
+             <audio controls style="width: 150px;">
+               <source src=0/4_2.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+           <td>
+            <audio controls style="width: 150px;">
+              <source src=0/4_3.wav type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+           </td>
+
+            <td>
+             <audio controls style="width: 150px;">
+               <source src=0/4_4.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+             <audio controls style="width: 150px;">
+               <source src=0/4_5.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+        </tr>
+
+      </table>
+    </div>
+
+    <h2>Example for source domain: Beethoven Solo Piano</h2>
+    <div>
+      <table border = "1" class="inlineTable">
+        <col width="50">
+
+        <col width="200">
+
+        <col width="200">
+
+        <col width="200">
+
+        <col width="200">
+
+        <col width="200">
+
+        <col width="200">
+
+        <col width="200">
+        <tr>
+          <th/>
+          <th/>
+          <th colspan="6">Target</th>
+        </tr>
+        <tr>
+             <th/>
+             <th>Original</th>
+
+             <th>Bach_Solo_Cello</th>
+
+             <th>Beethoven_Solo_Piano</th>
+
+             <th>Cambini_Wind_Quintet</th>
+
+             <th>Bach_Solo_Piano</th>
+
+             <th>Beethoven_Accompanied_Violin</th>
+
+             <th>Beethoven_String_Quartet</th>
+
+        </tr>
+
+        <tr>
+          <th> 6 </th>
+           <td>
+
+             <audio controls style="width: 150px;">
+               <source src=1/0.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+
+             <audio controls style="width: 150px;">
+               <source src=1/0_0.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td bgcolor="#FF0000">
+
+             <audio controls style="width: 150px;">
+               <source src=1/0_1.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+             <audio controls style="width: 150px;">
+               <source src=1/0_2.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+           <td>
+            <audio controls style="width: 150px;">
+              <source src=1/0_3.wav type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+          </td>
+
+            <td>
+
+             <audio controls style="width: 150px;">
+               <source src=1/0_4.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+
+             <audio controls style="width: 150px;">
+               <source src=1/0_5.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+        </tr>
+
+        <tr>
+          <th> 7 </th>
+           <td>
+
+             <audio controls style="width: 150px;">
+               <source src=1/1.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+
+             <audio controls style="width: 150px;">
+               <source src=1/1_0.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td bgcolor="#FF0000">
+
+             <audio controls style="width: 150px;">
+               <source src=1/1_1.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+
+             <audio controls style="width: 150px;">
+               <source src=1/1_2.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+           <td>
+            <audio controls style="width: 150px;">
+              <source src=1/1_3.wav type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+           </td>
+
+            <td>
+
+             <audio controls style="width: 150px;">
+               <source src=1/1_4.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+
+             <audio controls style="width: 150px;">
+               <source src=1/1_5.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+        </tr>
+
+        <tr>
+          <th> 8 </th>
+           <td>
+
+             <audio controls style="width: 150px;">
+               <source src=1/2.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+
+             <audio controls style="width: 150px;">
+               <source src=1/2_0.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td bgcolor="#FF0000">
+
+             <audio controls style="width: 150px;">
+               <source src=1/2_1.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+
+             <audio controls style="width: 150px;">
+               <source src=1/2_2.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+           <td>
+            <audio controls style="width: 150px;">
+              <source src=1/2_3.wav type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+           </td>
+
+            <td>
+             <audio controls style="width: 150px;">
+               <source src=1/2_4.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+
+             <audio controls style="width: 150px;">
+               <source src=1/2_5.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+        </tr>
+
+        <tr>
+          <th> 9 </th>
+           <td>
+
+             <audio controls style="width: 150px;">
+               <source src=1/3.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+
+             <audio controls style="width: 150px;">
+               <source src=1/3_0.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td bgcolor="#FF0000">
+
+             <audio controls style="width: 150px;">
+               <source src=1/3_1.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+
+             <audio controls style="width: 150px;">
+               <source src=1/3_2.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+           <td>
+            <audio controls style="width: 150px;">
+              <source src=1/3_3.wav type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+          </td>
+
+
+            <td>
+
+             <audio controls style="width: 150px;">
+               <source src=1/3_4.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+
+             <audio controls style="width: 150px;">
+               <source src=1/3_5.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+        </tr>
+
+        <tr>
+          <th> 10 </th>
+           <td>
+
+             <audio controls style="width: 150px;">
+               <source src=1/4.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+             <audio controls style="width: 150px;">
+               <source src=1/4_0.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td  bgcolor="#FF0000">
+
+             <audio controls style="width: 150px;">
+               <source src=1/4_1.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+
+             <audio controls style="width: 150px;">
+               <source src=1/4_2.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+           <td>
+            <audio controls style="width: 150px;">
+              <source src=1/4_3.wav type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+          </td>
+
+
+            <td>
+
+             <audio controls style="width: 150px;">
+               <source src=1/4_4.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+             <audio controls style="width: 150px;">
+               <source src=1/4_5.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+        </tr>
+
+      </table>
+    </div>
+
+    <h2>Example for source domain: Cambini Wind Quintet</h2>
+    <div>
+      <table border = "1" class="inlineTable">
+        <col width="50">
+
+        <col width="200">
+
+        <col width="200">
+
+        <col width="200">
+
+        <col width="200">
+
+        <col width="200">
+
+        <col width="200">
+
+        <col width="200">
+        <tr>
+          <th/>
+          <th/>
+          <th colspan="6">Target</th>
+        </tr>
+        <tr>
+             <th/>
+
+             <th>Original</th>
+
+             <th>Bach_Solo_Cello</th>
+
+             <th>Beethoven_Solo_Piano</th>
+
+             <th>Cambini_Wind_Quintet</th>
+
+             <th>Bach_Solo_Piano</th>
+
+             <th>Beethoven_Accompanied_Violin</th>
+
+             <th>Beethoven_String_Quartet</th>
+
+        </tr>
+
+        <tr>
+          <th> 11 </th>
+           <td>
+
+             <audio controls style="width: 150px;">
+               <source src=2/0.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+
+             <audio controls style="width: 150px;">
+               <source src=2/0_0.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+             <audio controls style="width: 150px;">
+               <source src=2/0_1.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td bgcolor="#FF0000">
+             <audio controls style="width: 150px;">
+               <source src=2/0_2.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+           <td>
+            <audio controls style="width: 150px;">
+              <source src=2/0_3.wav type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+          </td>
+
+
+            <td>
+
+             <audio controls style="width: 150px;">
+               <source src=2/0_4.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+
+             <audio controls style="width: 150px;">
+               <source src=2/0_5.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+        </tr>
+
+        <tr>
+          <th> 12 </th>
+           <td>
+
+             <audio controls style="width: 150px;">
+               <source src=2/1.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+
+             <audio controls style="width: 150px;">
+               <source src=2/1_0.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+
+             <audio controls style="width: 150px;">
+               <source src=2/1_1.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td bgcolor="#FF0000">
+
+             <audio controls style="width: 150px;">
+               <source src=2/1_2.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+           <td>
+            <audio controls style="width: 150px;">
+              <source src=2/1_3.wav type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+          </td>
+
+            <td>
+
+             <audio controls style="width: 150px;">
+               <source src=2/1_4.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+
+             <audio controls style="width: 150px;">
+               <source src=2/1_5.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+        </tr>
+
+        <tr>
+          <th> 13 </th>
+           <td>
+
+             <audio controls style="width: 150px;">
+               <source src=2/2.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+
+             <audio controls style="width: 150px;">
+               <source src=2/2_0.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+
+             <audio controls style="width: 150px;">
+               <source src=2/2_1.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td bgcolor="#FF0000">
+
+             <audio controls style="width: 150px;">
+               <source src=2/2_2.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+           <td>
+            <audio controls style="width: 150px;">
+              <source src=2/2_3.wav type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+          </td>
+
+            <td>
+             <audio controls style="width: 150px;">
+               <source src=2/2_4.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+
+             <audio controls style="width: 150px;">
+               <source src=2/2_5.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+        </tr>
+
+        <tr>
+          <th> 14 </th>
+           <td>
+
+             <audio controls style="width: 150px;">
+               <source src=2/3.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+
+             <audio controls style="width: 150px;">
+               <source src=2/3_0.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+
+             <audio controls style="width: 150px;">
+               <source src=2/3_1.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td bgcolor="#FF0000">
+
+             <audio controls style="width: 150px;">
+               <source src=2/3_2.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+           <td>
+            <audio controls style="width: 150px;">
+              <source src=2/3_3.wav type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+          </td>
+
+            <td>
+             <audio controls style="width: 150px;">
+               <source src=2/3_4.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+
+             <audio controls style="width: 150px;">
+               <source src=2/3_5.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+        </tr>
+
+        <tr>
+          <th> 15 </th>
+           <td>
+
+             <audio controls style="width: 150px;">
+               <source src=2/4.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+             <audio controls style="width: 150px;">
+               <source src=2/4_0.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+
+             <audio controls style="width: 150px;">
+               <source src=2/4_1.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td bgcolor="#FF0000">
+
+             <audio controls style="width: 150px;">
+               <source src=2/4_2.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+           <td>
+            <audio controls style="width: 150px;">
+              <source src=2/4_3.wav type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+          </td>
+
+            <td>
+
+             <audio controls style="width: 150px;">
+               <source src=2/4_4.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+             <audio controls style="width: 150px;">
+               <source src=2/4_5.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+        </tr>
+      </table>
+    </div>
+
+    <h2>Example for source domain: Bach Solo Piano</h2>
+    <div>
+      <table border = "1" class="inlineTable">
+
+        <col width="50">
+
+        <col width="200">
+
+        <col width="200">
+
+        <col width="200">
+
+        <col width="200">
+
+        <col width="200">
+
+        <col width="200">
+
+        <col width="200">
+
+        <col width="200">
+        <tr>
+          <th/>
+          <th/>
+          <th colspan="6">Target</th>
+        </tr>
+        <tr>
+             <th/>
+             <th>Original</th>
+
+             <th>Bach_Solo_Cello</th>
+
+             <th>Beethoven_Solo_Piano</th>
+
+             <th>Cambini_Wind_Quintet</th>
+
+             <th>Bach_Solo_Piano</th>
+
+             <th>Beethoven_Accompanied_Violin</th>
+
+             <th>Beethoven_String_Quartet</th>
+
+        </tr>
+
+        <tr>
+          <th>16</th>
+           <td>
+
+             <audio controls style="width: 150px;">
+               <source src=3/0.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+
+             <audio controls style="width: 150px;">
+               <source src=3/0_0.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+             <audio controls style="width: 150px;">
+               <source src=3/0_1.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+             <audio controls style="width: 150px;">
+               <source src=3/0_2.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+           <td bgcolor="#FF0000">
+            <audio controls style="width: 150px;">
+              <source src=3/0_3.wav type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+          </td>
+
+            <td>
+             <audio controls style="width: 150px;">
+               <source src=3/0_4.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+
+             <audio controls style="width: 150px;">
+               <source src=3/0_5.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+        </tr>
+
+        <tr>
+          <th>17</th>
+           <td>
+
+             <audio controls style="width: 150px;">
+               <source src=3/1.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+
+             <audio controls style="width: 150px;">
+               <source src=3/1_0.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+
+             <audio controls style="width: 150px;">
+               <source src=3/1_1.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+             <audio controls style="width: 150px;">
+               <source src=3/1_2.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+           <td bgcolor="#FF0000">
+            <audio controls style="width: 150px;">
+              <source src=3/1_3.wav type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+          </td>
+
+
+            <td>
+             <audio controls style="width: 150px;">
+               <source src=3/1_4.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+             <audio controls style="width: 150px;">
+               <source src=3/1_5.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+        </tr>
+
+        <tr>
+          <th>18</th>
+           <td>
+
+             <audio controls style="width: 150px;">
+               <source src=3/2.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+
+             <audio controls style="width: 150px;">
+               <source src=3/2_0.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+
+             <audio controls style="width: 150px;">
+               <source src=3/2_1.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+             <audio controls style="width: 150px;">
+               <source src=3/2_2.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td bgcolor="#FF0000">
+             <audio controls style="width: 150px;">
+               <source src=3/2_3.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+           <td>
+
+            <audio controls style="width: 150px;">
+              <source src=3/2_4.wav type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+          </td>
+
+
+            <td>
+
+             <audio controls style="width: 150px;">
+               <source src=3/2_5.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+        </tr>
+
+        <tr>
+          <th>19</th>
+           <td>
+
+             <audio controls style="width: 150px;">
+               <source src=3/3.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+
+             <audio controls style="width: 150px;">
+               <source src=3/3_0.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+
+             <audio controls style="width: 150px;">
+               <source src=3/3_1.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+
+             <audio controls style="width: 150px;">
+               <source src=3/3_2.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+           <td bgcolor="#FF0000">
+
+            <audio controls style="width: 150px;">
+              <source src=3/3_3.wav type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+          </td>
+
+            <td>
+
+             <audio controls style="width: 150px;">
+               <source src=3/3_4.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+
+             <audio controls style="width: 150px;">
+               <source src=3/3_5.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+        </tr>
+
+        <tr>
+          <th>20</th>
+           <td>
+
+             <audio controls style="width: 150px;">
+               <source src=3/4.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+             <audio controls style="width: 150px;">
+               <source src=3/4_0.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+
+             <audio controls style="width: 150px;">
+               <source src=3/4_1.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+
+             <audio controls style="width: 150px;">
+               <source src=3/4_2.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+           <td bgcolor="#FF0000">
+            <audio controls style="width: 150px;">
+              <source src=3/4_3.wav type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+          </td>
+
+            <td>
+             <audio controls style="width: 150px;">
+               <source src=3/4_4.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+             <audio controls style="width: 150px;">
+               <source src=3/4_5.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+        </tr>
+      </table>
+    </div>
+
+    <h2>Example for source domain: Beethoven Accompanied Violin</h2>
+    <div>
+      <table border = "1" class="inlineTable">
+
+        <col width="50">
+
+        <col width="200">
+
+        <col width="200">
+
+        <col width="200">
+
+        <col width="200">
+
+        <col width="200">
+
+        <col width="200">
+
+        <col width="200">
+        <tr>
+          <th/>
+          <th/>
+          <th colspan="6">Target</th>
+        </tr>
+        <tr>
+             <th></th>
+             <th>Original</th>
+
+             <th>Bach_Solo_Cello</th>
+
+             <th>Beethoven_Solo_Piano</th>
+
+             <th>Cambini_Wind_Quintet</th>
+
+             <th>Bach_Solo_Piano</th>
+
+             <th>Beethoven_Accompanied_Violin</th>
+
+             <th>Beethoven_String_Quartet</th>
+
+        </tr>
+
+        <tr>
+          <th>21</th>
+           <td>
+
+             <audio controls style="width: 150px;">
+               <source src=4/0.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+
+             <audio controls style="width: 150px;">
+               <source src=4/0_0.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+             <audio controls style="width: 150px;">
+               <source src=4/0_1.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+             <audio controls style="width: 150px;">
+               <source src=4/0_2.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+           <td>
+            <audio controls style="width: 150px;">
+              <source src=4/0_3.wav type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+          </td>
+
+            <td bgcolor="#FF0000">
+             <audio controls style="width: 150px;">
+               <source src=4/0_4.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+
+             <audio controls style="width: 150px;">
+               <source src=4/0_5.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+        </tr>
+
+        <tr>
+          <th>22</th>
+           <td>
+
+             <audio controls style="width: 150px;">
+               <source src=4/1.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+
+             <audio controls style="width: 150px;">
+               <source src=4/1_0.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+
+             <audio controls style="width: 150px;">
+               <source src=4/1_1.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+             <audio controls style="width: 150px;">
+               <source src=4/1_2.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+           <td>
+            <audio controls style="width: 150px;">
+              <source src=4/1_3.wav type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+          </td>
+
+            <td bgcolor="#FF0000">
+             <audio controls style="width: 150px;">
+               <source src=4/1_4.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+             <audio controls style="width: 150px;">
+               <source src=4/1_5.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+        </tr>
+
+        <tr>
+          <th>23</th>
+           <td>
+
+             <audio controls style="width: 150px;">
+               <source src=4/2.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+
+             <audio controls style="width: 150px;">
+               <source src=4/2_0.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+
+             <audio controls style="width: 150px;">
+               <source src=4/2_1.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+
+             <audio controls style="width: 150px;">
+               <source src=4/2_2.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+           <td>
+            <audio controls style="width: 150px;">
+              <source src=4/2_3.wav type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+          </td>
+
+
+            <td bgcolor="#FF0000">
+
+             <audio controls style="width: 150px;">
+               <source src=4/2_4.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+
+             <audio controls style="width: 150px;">
+               <source src=4/2_5.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+        </tr>
+
+        <tr>
+          <th>24</th>
+           <td>
+
+             <audio controls style="width: 150px;">
+               <source src=4/3.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+
+             <audio controls style="width: 150px;">
+               <source src=4/3_0.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+
+             <audio controls style="width: 150px;">
+               <source src=4/3_1.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+
+             <audio controls style="width: 150px;">
+               <source src=4/3_2.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+           <td>
+            <audio controls style="width: 150px;">
+              <source src=4/3_3.wav type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+          </td>
+
+
+            <td bgcolor="#FF0000">
+
+             <audio controls style="width: 150px;">
+               <source src=4/3_4.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+
+             <audio controls style="width: 150px;">
+               <source src=4/3_5.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+        </tr>
+
+        <tr>
+          <th>25</th>
+           <td>
+
+             <audio controls style="width: 150px;">
+               <source src=4/4.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+             <audio controls style="width: 150px;">
+               <source src=4/4_0.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+
+             <audio controls style="width: 150px;">
+               <source src=4/4_1.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+
+             <audio controls style="width: 150px;">
+               <source src=4/4_2.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+           <td>
+            <audio controls style="width: 150px;">
+              <source src=4/4_3.wav type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+          </td>
+
+
+            <td bgcolor="#FF0000">
+
+             <audio controls style="width: 150px;">
+               <source src=4/4_4.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+             <audio controls style="width: 150px;">
+               <source src=4/4_5.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+        </tr>
+      </table>
+    </div>
+
+    <h2>Example for source domain: Beethoven String Quartet</h2>
+    <div>
+      <table border = "1" class="inlineTable">
+
+        <col width="50">
+
+        <col width="200">
+
+        <col width="200">
+
+        <col width="200">
+
+        <col width="200">
+
+        <col width="200">
+
+        <col width="200">
+
+        <col width="200">
+        <tr>
+          <th/>
+          <th/>
+          <th colspan="6">Target</th>
+        </tr>
+        <tr>
+             <th/>
+             <th>Original</th>
+
+             <th>Bach_Solo_Cello</th>
+
+             <th>Beethoven_Solo_Piano</th>
+
+             <th>Cambini_Wind_Quintet</th>
+
+             <th>Bach_Solo_Piano</th>
+
+             <th>Beethoven_Accompanied_Violin</th>
+
+             <th>Beethoven_String_Quartet</th>
+
+        </tr>
+
+        <tr>
+          <th>26</th>
+           <td>
+             <audio controls style="width: 150px;">
+               <source src=5/0.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+
+             <audio controls style="width: 150px;">
+               <source src=5/0_0.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+             <audio controls style="width: 150px;">
+               <source src=5/0_1.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+             <audio controls style="width: 150px;">
+               <source src=5/0_2.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+           <td>
+            <audio controls style="width: 150px;">
+              <source src=5/0_3.wav type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+          </td>
+
+
+            <td>
+             <audio controls style="width: 150px;">
+               <source src=5/0_4.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td bgcolor="#FF0000">
+
+             <audio controls style="width: 150px;">
+               <source src=5/0_5.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+        </tr>
+
+        <tr>
+          <th>27</th>
+           <td>
+
+             <audio controls style="width: 150px;">
+               <source src=5/1.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+
+             <audio controls style="width: 150px;">
+               <source src=5/1_0.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+
+             <audio controls style="width: 150px;">
+               <source src=5/1_1.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+             <audio controls style="width: 150px;">
+               <source src=5/1_2.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+           <td>
+            <audio controls style="width: 150px;">
+              <source src=5/1_3.wav type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+          </td>
+
+            <td>
+             <audio controls style="width: 150px;">
+               <source src=5/1_4.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td bgcolor="#FF0000">
+             <audio controls style="width: 150px;">
+               <source src=5/1_5.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+        </tr>
+
+        <tr>
+          <th>28</th>
+           <td>
+
+             <audio controls style="width: 150px;">
+               <source src=5/2.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+
+             <audio controls style="width: 150px;">
+               <source src=5/2_0.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+
+             <audio controls style="width: 150px;">
+               <source src=5/2_1.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+
+             <audio controls style="width: 150px;">
+               <source src=5/2_2.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+           <td>
+            <audio controls style="width: 150px;">
+              <source src=5/2_3.wav type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+          </td>
+
+            <td>
+
+             <audio controls style="width: 150px;">
+               <source src=5/2_4.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td bgcolor="#FF0000">
+
+             <audio controls style="width: 150px;">
+               <source src=5/2_5.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+        </tr>
+
+        <tr>
+          <th>29</th>
+           <td>
+
+             <audio controls style="width: 150px;">
+               <source src=5/3.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+
+             <audio controls style="width: 150px;">
+               <source src=5/3_0.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+
+             <audio controls style="width: 150px;">
+               <source src=5/3_1.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+
+             <audio controls style="width: 150px;">
+               <source src=5/3_2.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+           <td>
+            <audio controls style="width: 150px;">
+              <source src=5/3_3.wav type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+          </td>
+
+            <td>
+
+             <audio controls style="width: 150px;">
+               <source src=5/3_4.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td bgcolor="#FF0000">
+
+             <audio controls style="width: 150px;">
+               <source src=5/3_5.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+        </tr>
+
+        <tr>
+          <th>30</th>
+           <td>
+
+             <audio controls style="width: 150px;">
+               <source src=5/4.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+             <audio controls style="width: 150px;">
+               <source src=5/4_0.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+
+             <audio controls style="width: 150px;">
+               <source src=5/4_1.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td>
+
+             <audio controls style="width: 150px;">
+               <source src=5/4_2.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+           <td>
+            <audio controls style="width: 150px;">
+              <source src=5/4_3.wav type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+          </td>
+
+            <td>
+
+             <audio controls style="width: 150px;">
+               <source src=5/4_4.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+
+            <td bgcolor="#FF0000">
+             <audio controls style="width: 150px;">
+               <source src=5/4_5.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+        </tr>
+      </table>
+    </div>
+
+  </body>
+</html>

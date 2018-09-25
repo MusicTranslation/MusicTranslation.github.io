@@ -1,0 +1,89 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Samples for MIDI to Bach and Beethoven Musical Translation</title>
+    <style type="text/css">
+body, input, select, td, li, div, textarea, p {
+	font-size: 11px;
+	line-height: 16px;
+	font-family: verdana, arial, sans-serif;
+}
+
+body {
+	margin:5px;
+	background-color:white;
+}
+
+h1 {
+	font-size:16px;
+	font-weight:bold;
+}
+
+h2 {
+	font-size:14px;
+	font-weight:bold;
+}
+    </style>
+  </head>
+
+  <body>
+    <h1 align="center">Samples for MIDI to Bach and Beethoven Musical Translation</h1>
+    <h2>Introduction</h2>
+    <p> In the following samples, we convert a MIDI clip to Beethoven domain and Bach domain.  </p>
+    <p> The input MIDI ("Hänschen klein") does not contain any form of ornamentation which are clearly heard in the translated samples in Bach and Bethoveen domains. <br/>
+        The outputs exhibit stylistic elements typical of the training data. </p>
+
+    <div>
+      <table border = "1" class="inlineTable">
+        <col width="200">
+        <col width="200">
+
+        <tr>
+            <th>Audio Source</th>
+        </tr>
+
+
+        <tr>
+            <td>
+             <audio controls style="width: 200px;">
+               <source src=src/Hanschen_Klein.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+      </table>
+
+    </div>
+
+    <h2>Musical Translation</h2>
+    <div>
+
+      <table border = "1" class="inlineTable">
+        <col width="200">
+        <col width="200">
+
+        <tr>
+            <th>Beethoven</th>
+            <th>Bach</th>
+        </tr>
+
+
+        <tr>
+            <td>
+             <audio controls style="width: 200px;">
+               <source src=translation/A/0/Hanschen_Klein.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+           <td>
+            <audio controls style="width: 200px;">
+              <source src=translation/A/1/Hanschen_Klein.wav type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

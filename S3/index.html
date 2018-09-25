@@ -1,0 +1,372 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Samples for comparison with Concatinative methods</title>
+    <style type="text/css">
+body, input, select, td, li, div, textarea, p {
+	font-size: 11px;
+	line-height: 16px;
+	font-family: verdana, arial, sans-serif;
+}
+
+body {
+	margin:5px;
+	background-color:white;
+}
+
+h1 {
+	font-size:16px;
+	font-weight:bold;
+}
+
+h2 {
+	font-size:14px;
+	font-weight:bold;
+}
+    </style>
+  </head>
+
+  <body>
+    <h1 align="center">Samples for comparison with Concatinative methods</h1>
+    <h2>Introduction</h2>
+    <p>We compare our results with two published result sets in the field of Concatenative Synthesis. <a href="#section1">[1]</a> and <a href="#section2">[2]</a> are a work comparing several flavors of musical mosaicing algorithms:</p>
+
+    <ul>
+      <li> dp – Dynamic programming path search, supporting continuity but not mixtures.</li>
+      <li> mix – A Mixture method resembling non-negative matching pursuit done on a frame-by-frame basis. Supports mixtures but not continuity.</li>
+      <li> mp – Matching pursuit decomposition in the audio time domain, using a dictionary of analytic signal atoms extracted from the sources, as implemented by MPTK [Krstulovic and Gribonval, 2006].</li>
+      <li> near – Classic nearest-neighbor matching done on a frame-by-frame</li>
+      <li> tracks – Hybrid tracks algorithm, heuristic algorithm allowing for mixtures and continuity. (near and mix are both implemented by this
+      method with certain features turned off).</li>
+    </ul>
+
+    <p> These methods take two inputs. In addition to the audio being converted, it also takes audio to use as source material to reconstruct the target audio from. </p>
+
+    <br/>
+    <h1>Converted Sample No. 1 <a href="#section1">[1]</a></h1>
+    <div>
+      <table border = "1" class="inlineTable">
+        <col width="200">
+        <col width="200">
+
+        <tr>
+            <th>Input</th>
+        </tr>
+
+
+        <tr>
+            <td>
+             <audio controls style="width: 200px;">
+               <source src=concat/A/AT.mp3 type="audio/mpeg">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+      </table>
+
+    </div>
+
+    <h2>Concatenative Method Results</h2>
+    <div>
+
+      <table border = "1" class="inlineTable">
+        <col width="200">
+        <col width="200">
+        <col width="200">
+        <col width="200">
+        <col width="200">
+        <col width="200">
+
+        <tr>
+            <th>A1 (dp)</th>
+            <th>A2 (mix)</th>
+            <th>A3 (mp)</th>
+            <th>A4 (near)</th>
+            <th>A5 (tracks)</th>
+        </tr>
+
+
+        <tr>
+            <td>
+             <audio controls style="width: 200px;">
+               <source src=concat/A/A1.mp3 type="audio/mpeg">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+           <td>
+            <audio controls style="width: 200px;">
+              <source src=concat/A/A2.mp3 type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+          </td>
+
+          <td>
+           <audio controls style="width: 200px;">
+             <source src=concat/A/A3.mp3 type="audio/mpeg">
+             Your browser does not support the audio element.
+           </audio>
+         </td>
+
+         <td>
+          <audio controls style="width: 200px;">
+            <source src=concat/A/A4.mp3 type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+        </td>
+
+        <td>
+         <audio controls style="width: 200px;">
+           <source src=concat/A/A5.mp3 type="audio/mpeg">
+           Your browser does not support the audio element.
+         </audio>
+       </td>
+        </tr>
+
+      </table>
+    </div>
+
+    <h2>Autoencoder based Music Translation</h2>
+    <p>For comparison, we converted the target audio to three domains using the network described in the paper. The following table shows our result.</p>
+
+    <div>
+
+      <table border = "1" class="inlineTable">
+        <col width="200">
+        <col width="200">
+        <col width="200">
+
+        <tr>
+            <th>Ours - String Quartet</th>
+            <th>Ours - Solo Cello</th>
+            <th>Ours - Wind Quintet</th>
+        </tr>
+
+
+        <tr>
+        <td>
+       <audio controls style="width: 200px;">
+         <source src=our/A/src_converted_to_quartet.wav type="audio/wav">
+         Your browser does not support the audio element.
+       </audio>
+     </td>
+     <td>
+        <audio controls style="width: 200px;">
+          <source src=our/A/src_converted_to_cello.wav type="audio/wav">
+          Your browser does not support the audio element.
+        </audio>
+      </td>
+      <td>
+
+     <audio controls style="width: 200px;">
+       <source src=our/A/src_converted_to_wind.wav type="audio/wav">
+       Your browser does not support the audio element.
+     </audio>
+   </td>
+        </tr>
+
+      </table>
+    </div>
+
+    <br/>
+    <h1>Converted Sample No. 2 <a href="#section2">[2]</a></h1>
+    <div>
+      <table border = "1" class="inlineTable">
+        <col width="200">
+        <col width="200">
+
+        <tr>
+            <th>Input</th>
+        </tr>
+        <tr>
+            <td>
+             <audio controls style="width: 200px;">
+               <source src=concat/C/GT.mp3 type="audio/mpeg">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+        </tr>
+      </table>
+    </div>
+
+    <h2>Concatenative Method Results</h2>
+    <div>
+
+      <table border = "1" class="inlineTable">
+        <col width="200">
+        <col width="200">
+        <col width="200">
+        <col width="200">
+        <col width="200">
+        <col width="200">
+
+        <tr>
+            <th>G1 (dp)</th>
+            <th>G2 (mix)</th>
+            <th>G3 (mp)</th>
+            <th>G4 (near)</th>
+            <th>G5 (tracks)</th>
+        </tr>
+
+
+        <tr>
+            <td>
+             <audio controls style="width: 200px;">
+               <source src=concat/C/G1.mp3 type="audio/mpeg">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+           <td>
+            <audio controls style="width: 200px;">
+              <source src=concat/C/G2.mp3 type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+          </td>
+
+          <td>
+           <audio controls style="width: 200px;">
+             <source src=concat/C/G3.mp3 type="audio/mpeg">
+             Your browser does not support the audio element.
+           </audio>
+         </td>
+
+         <td>
+          <audio controls style="width: 200px;">
+            <source src=concat/C/G4.mp3 type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+        </td>
+
+        <td>
+         <audio controls style="width: 200px;">
+           <source src=concat/C/G5.mp3 type="audio/mpeg">
+           Your browser does not support the audio element.
+         </audio>
+       </td>
+        </tr>
+
+      </table>
+    </div>
+
+    <h2>Autoencoder based Music Translation</h2>
+    <p>For comparison, we converted the target audio to three domains using the network described in the paper. The following table shows our result as well as a sample from the target domain</p>
+    <div>
+
+      <table border = "1" class="inlineTable">
+        <col width="200">
+
+        <tr>
+            <th>Ours - Piano</th>
+            <th>Ours - Solo Cello</th>
+            <th>Ours - Wind Quintet</th>
+        </tr>
+
+
+        <tr>
+        <td>
+         <audio controls style="width: 200px;">
+         <source src=our/C/src_converted_to_piano.wav type="audio/wav">
+           Your browser does not support the audio element.
+         </audio>
+       </td>
+       <td>
+        <audio controls style="width: 200px;">
+        <source src=our/C/src_converted_to_cello.wav type="audio/wav">
+          Your browser does not support the audio element.
+        </audio>
+      </td>
+      <td>
+       <audio controls style="width: 200px;">
+       <source src=our/C/src_converted_to_wind.wav type="audio/wav">
+         Your browser does not support the audio element.
+       </audio>
+     </td>
+
+        </tr>
+
+      </table>
+    </div>
+
+    <br/>
+    <h1>Converted Sample No. 3 <a href="#section3">[3]</a></h1>
+    <p>For method <a href="#section3">[3]</a>, the source audio from which the target is reconstructed is a collection of 4 String Quartets by Schoenberg. </p>
+    <div>
+      <table border = "1" class="inlineTable">
+        <col width="200">
+
+        <tr>
+            <th>Input - Mahler, Ritenuto</th>
+        </tr>
+
+
+        <tr>
+            <td>
+             <audio controls style="width: 200px;">
+               <source src=concat/B/MahlerRitenuto.mp3 type="audio/mpeg">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+      </table>
+
+    </div>
+
+    <h2>Concatenative Method Results</h2>
+    <div>
+
+      <table border = "1" class="inlineTable">
+        <col width="200">
+        <tr>
+            <th>Result</th>
+        </tr>
+
+        <tr>
+          <td>
+            <audio controls style="width: 200px;">
+               <source src=concat/B/MahlerSchoenberg10000_1024.mp3 type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <h2>Autoencoder based Music Translation</h2>
+    <p>For comparison, we converted the target audio using our String Quartets decoder, trained on String Quartets by Beethoven. We also provide the result of conversion to a Wind Quintet. The following table shows our result as well as a sample from the target domain</p>
+    <div>
+
+      <table border = "1" class="inlineTable">
+        <col width="200">
+
+        <tr>
+            <th>Ours - String Quartet</th>
+            <th>Ours - Wind Quintet</th>
+        </tr>
+
+
+        <tr>
+
+        <td>
+         <audio controls style="width: 200px;">
+         <source src=our/B/src_converted_to_strings.wav type="audio/wav">
+           Your browser does not support the audio element.
+         </audio>
+       </td>
+       <td>
+      <audio controls style="width: 200px;">
+        <source src=our/B/src_converted_to_wind.wav type="audio/wav">
+        Your browser does not support the audio element.
+      </audio>
+    </td>
+        </tr>
+
+      </table>
+    </div>
+
+    <br/>
+    <br/>
+    <br/>
+    <p id="section1">[1] Samples taken from http://www.dtic.upf.edu/~gcoleman/dsounds/, sample A. </p>
+    <p id="section2">[2] Samples taken from http://www.dtic.upf.edu/~gcoleman/dsounds/, sample G. </p>
+    <p id="section3">[3] Samples taken from http://spectrum.mat.ucsb.edu/~b.sturm/CMJ2006/MATConcat.html, Mahler's crescendi.</p>
+  </body>
+</html>
