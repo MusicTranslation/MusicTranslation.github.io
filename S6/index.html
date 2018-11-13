@@ -1,0 +1,132 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Samples for Latent Size Ablation</title>
+    <style type="text/css">
+body, input, select, td, li, div, textarea, p {
+	font-size: 11px;
+	line-height: 16px;
+	font-family: verdana, arial, sans-serif;
+}
+
+body {
+	margin:5px;
+	background-color:white;
+}
+
+h1 {
+	font-size:16px;
+	font-weight:bold;
+}
+
+h2 {
+	font-size:14px;
+	font-weight:bold;
+}
+    </style>
+  </head>
+
+  <body>
+    <h1 align="center">Samples for Latent Size Ablation</h1>
+    <h2>Introduction</h2>
+    <p> In the following samples, we convert a simple MIDI clip to Beethoven domain and Bach domain.  </p>
+    <p> We perform ablation study on the dimensionality of the latent encoding. As can be heard, a latent dimensionality of 64 tends to reconstruct the input (unwanted memorization). </br>
+        A model with a latent space of 8 performs well.  A model with a latent dimensionality of 4 is more creative, less related to the input midi, and also suffers from a reduction in quality.</p>
+
+    <div>
+      <table border = "1" class="inlineTable">
+        <col width="200">
+        <col width="200">
+
+        <tr>
+            <th>Audio Source</th>
+        </tr>
+
+
+        <tr>
+            <td>
+             <audio controls style="width: 200px;">
+               <source src=src/Hanschen_Klein.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+      </table>
+
+    </div>
+
+    <h2>Musical Translation</h2>
+    <div>
+
+      <table border = "1" class="inlineTable">
+        <col width="200">
+        <col width="200">
+        <col width="200">
+
+        <tr>
+            <th>Latent Size</th>
+            <th>Beethoven</th>
+            <th>Bach</th>
+        </tr>
+
+
+        <tr>
+            <th>
+             <font size="2">4</font>
+           </th>
+            <td>
+             <audio controls style="width: 200px;">
+               <source src=translation/4/0/Hanschen_Klein.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+           <td>
+            <audio controls style="width: 200px;">
+              <source src=translation/4/1/Hanschen_Klein.wav type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+          </td>
+        </tr>
+
+        <tr>
+            <th>
+             <font size="2">8</font>
+           </th>
+            <td>
+             <audio controls style="width: 200px;">
+               <source src=translation/8/0/Hanschen_Klein.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+           <td>
+            <audio controls style="width: 200px;">
+              <source src=translation/8/1/Hanschen_Klein.wav type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+          </td>
+        </tr>
+
+        <tr>
+            <th>
+             <font size="2">64</font>
+           </th>
+            <td>
+             <audio controls style="width: 200px;">
+               <source src=translation/64/0/Hanschen_Klein.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+           <td>
+            <audio controls style="width: 200px;">
+              <source src=translation/64/1/Hanschen_Klein.wav type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

@@ -28,11 +28,11 @@ h2 {
   </head>
 
   <body>
-    <h1 align="center">Samples for Semantic Blending Experiment</h1>
+    <h1 align="center">Samples for Semantic Blending Experiment in WAV Space</h1>
     <h2>Introduction</h2>
-    <p> We have selected two random 5 second segments A and B from each domain and embedded both using the encoder, obtaining $e_A$ and $e_B$.
-        Then, we combine the embeddings as follows: <br/>
-        starting with 3.5 second from $e_A$, we combine the next 1.5 seconds of $e_B$ with the first 1.5 seconds of $e_B$ using a linear
+    <p> (Updated on 15th November, 2018) </p>
+    <p> We have selected two random 5 second segments A and B from each domain. Then, we combine the segments, in their WAV form, as follows: <br/>
+        starting with 3.5 second from $A$, we combine the next 1.5 seconds of $B$ with the first 1.5 seconds of $B$ using a linear
         weighting with weights $1 - t/1.5$ and $t/1.5$ respectively, where $t \in [0,1.5]$. <br/>
         We then use the decoder to generate audio. The results are natural and the shift is completely seamless, as seen below.</p>
     <br/>
@@ -40,9 +40,10 @@ h2 {
     <img src="figure.png" alt="Blending process." width="40%">
     <br/>
 
+    <h1>Music Blending</h1>
+
     <h1>Sample No. 1 - Solo Cello </h1>
     <div>
-
       <h3>Inputs</h3>
       <table border = "1" class="inlineTable">
         <col width="200">
@@ -57,13 +58,13 @@ h2 {
         <tr>
             <td>
              <audio controls style="width: 200px;">
-               <source src=blending/0/0.wav type="audio/wav">
+               <source src=blending/wav/0/0.wav type="audio/wav">
                Your browser does not support the audio element.
              </audio>
            </td>
            <td>
             <audio controls style="width: 200px;">
-              <source src=blending/0/1.wav type="audio/wav">
+              <source src=blending/wav/0/1.wav type="audio/wav">
               Your browser does not support the audio element.
             </audio>
           </td>
@@ -78,9 +79,19 @@ h2 {
         <col width="200">
         <col width="200">
         <col width="200">
+        <col width="200">
+        <col width="200">
 
         <tr>
             <th></th>
+            <th colspan="2">WAV Blending</th>
+            <th colspan="2">Latent Blending</th>
+        </tr>
+
+        <tr>
+            <th></th>
+            <th>A</th>
+            <th>B</th>
             <th>A</th>
             <th>B</th>
         </tr>
@@ -90,33 +101,61 @@ h2 {
           <th>A</th>
             <td>
              <audio controls style="width: 200px;">
-               <source src=blending/0/0_0.wav type="audio/wav">
+               <source src=blending/wav/0/0_0.wav type="audio/wav">
                Your browser does not support the audio element.
              </audio>
            </td>
 
            <td>
             <audio controls style="width: 200px;">
-              <source src=blending/0/0_1.wav type="audio/wav">
+              <source src=blending/wav/0/0_1.wav type="audio/wav">
               Your browser does not support the audio element.
             </audio>
            </td>
+
+           <td>
+            <audio controls style="width: 200px;">
+              <source src=blending/emb/0/0_0.wav type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+          </td>
+
+          <td>
+           <audio controls style="width: 200px;">
+             <source src=blending/emb/0/0_1.wav type="audio/wav">
+             Your browser does not support the audio element.
+           </audio>
+          </td>
         </tr>
         <tr>
           <th>B</th>
             <td>
              <audio controls style="width: 200px;">
-               <source src=blending/0/1_0.wav type="audio/wav">
+               <source src=blending/wav/0/1_0.wav type="audio/wav">
                Your browser does not support the audio element.
              </audio>
            </td>
 
            <td>
             <audio controls style="width: 200px;">
-              <source src=blending/0/1_1.wav type="audio/wav">
+              <source src=blending/wav/0/1_1.wav type="audio/wav">
               Your browser does not support the audio element.
             </audio>
            </td>
+
+           <td>
+            <audio controls style="width: 200px;">
+              <source src=blending/emb/0/1_0.wav type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+          </td>
+
+          <td>
+           <audio controls style="width: 200px;">
+             <source src=blending/emb/0/1_1.wav type="audio/wav">
+             Your browser does not support the audio element.
+           </audio>
+          </td>
         </tr>
       </table>
     </div>
@@ -139,13 +178,13 @@ h2 {
         <tr>
             <td>
              <audio controls style="width: 200px;">
-               <source src=blending/1/0.wav type="audio/wav">
+               <source src=blending/wav/1/0.wav type="audio/wav">
                Your browser does not support the audio element.
              </audio>
            </td>
            <td>
             <audio controls style="width: 200px;">
-              <source src=blending/1/1.wav type="audio/wav">
+              <source src=blending/wav/1/1.wav type="audio/wav">
               Your browser does not support the audio element.
             </audio>
           </td>
@@ -160,9 +199,19 @@ h2 {
         <col width="200">
         <col width="200">
         <col width="200">
+        <col width="200">
+        <col width="200">
 
         <tr>
             <th></th>
+            <th colspan="2">WAV Blending</th>
+            <th colspan="2">Latent Blending</th>
+        </tr>
+
+        <tr>
+            <th></th>
+            <th>A</th>
+            <th>B</th>
             <th>A</th>
             <th>B</th>
         </tr>
@@ -172,33 +221,62 @@ h2 {
           <th>A</th>
             <td>
              <audio controls style="width: 200px;">
-               <source src=blending/1/0_0.wav type="audio/wav">
+               <source src=blending/wav/1/0_0.wav type="audio/wav">
                Your browser does not support the audio element.
              </audio>
            </td>
 
            <td>
             <audio controls style="width: 200px;">
-              <source src=blending/1/0_1.wav type="audio/wav">
+              <source src=blending/wav/1/0_1.wav type="audio/wav">
               Your browser does not support the audio element.
             </audio>
            </td>
+
+           <td>
+            <audio controls style="width: 200px;">
+              <source src=blending/emb/1/0_0.wav type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+          </td>
+
+          <td>
+           <audio controls style="width: 200px;">
+             <source src=blending/emb/1/0_1.wav type="audio/wav">
+             Your browser does not support the audio element.
+           </audio>
+          </td>
         </tr>
+
         <tr>
           <th>B</th>
             <td>
              <audio controls style="width: 200px;">
-               <source src=blending/1/1_0.wav type="audio/wav">
+               <source src=blending/wav/1/1_0.wav type="audio/wav">
                Your browser does not support the audio element.
              </audio>
            </td>
 
            <td>
             <audio controls style="width: 200px;">
-              <source src=blending/1/1_1.wav type="audio/wav">
+              <source src=blending/wav/1/1_1.wav type="audio/wav">
               Your browser does not support the audio element.
             </audio>
            </td>
+
+           <td>
+            <audio controls style="width: 200px;">
+              <source src=blending/emb/1/1_0.wav type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+          </td>
+
+          <td>
+           <audio controls style="width: 200px;">
+             <source src=blending/emb/1/1_1.wav type="audio/wav">
+             Your browser does not support the audio element.
+           </audio>
+          </td>
         </tr>
       </table>
     </div>
@@ -221,13 +299,13 @@ h2 {
         <tr>
             <td>
              <audio controls style="width: 200px;">
-               <source src=blending/2/0.wav type="audio/wav">
+               <source src=blending/wav/2/0.wav type="audio/wav">
                Your browser does not support the audio element.
              </audio>
            </td>
            <td>
             <audio controls style="width: 200px;">
-              <source src=blending/2/1.wav type="audio/wav">
+              <source src=blending/wav/2/1.wav type="audio/wav">
               Your browser does not support the audio element.
             </audio>
           </td>
@@ -242,9 +320,19 @@ h2 {
         <col width="200">
         <col width="200">
         <col width="200">
+        <col width="200">
+        <col width="200">
 
         <tr>
             <th></th>
+            <th colspan="2">WAV Blending</th>
+            <th colspan="2">Latent Blending</th>
+        </tr>
+
+        <tr>
+            <th></th>
+            <th>A</th>
+            <th>B</th>
             <th>A</th>
             <th>B</th>
         </tr>
@@ -254,33 +342,61 @@ h2 {
           <th>A</th>
             <td>
              <audio controls style="width: 200px;">
-               <source src=blending/2/0_0.wav type="audio/wav">
+               <source src=blending/wav/2/0_0.wav type="audio/wav">
                Your browser does not support the audio element.
              </audio>
            </td>
 
            <td>
             <audio controls style="width: 200px;">
-              <source src=blending/2/0_1.wav type="audio/wav">
+              <source src=blending/wav/2/0_1.wav type="audio/wav">
               Your browser does not support the audio element.
             </audio>
            </td>
+
+           <td>
+            <audio controls style="width: 200px;">
+              <source src=blending/emb/2/0_0.wav type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+          </td>
+
+          <td>
+           <audio controls style="width: 200px;">
+             <source src=blending/emb/2/0_1.wav type="audio/wav">
+             Your browser does not support the audio element.
+           </audio>
+          </td>
         </tr>
         <tr>
           <th>B</th>
             <td>
              <audio controls style="width: 200px;">
-               <source src=blending/2/1_0.wav type="audio/wav">
+               <source src=blending/wav/2/1_0.wav type="audio/wav">
                Your browser does not support the audio element.
              </audio>
            </td>
 
            <td>
             <audio controls style="width: 200px;">
-              <source src=blending/2/1_1.wav type="audio/wav">
+              <source src=blending/wav/2/1_1.wav type="audio/wav">
               Your browser does not support the audio element.
             </audio>
            </td>
+
+           <td>
+            <audio controls style="width: 200px;">
+              <source src=blending/emb/2/1_0.wav type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+          </td>
+
+          <td>
+           <audio controls style="width: 200px;">
+             <source src=blending/emb/2/1_1.wav type="audio/wav">
+             Your browser does not support the audio element.
+           </audio>
+          </td>
         </tr>
       </table>
     </div>
@@ -303,13 +419,13 @@ h2 {
         <tr>
             <td>
              <audio controls style="width: 200px;">
-               <source src=blending/4/0.wav type="audio/wav">
+               <source src=blending/wav/4/0.wav type="audio/wav">
                Your browser does not support the audio element.
              </audio>
            </td>
            <td>
             <audio controls style="width: 200px;">
-              <source src=blending/4/1.wav type="audio/wav">
+              <source src=blending/wav/4/1.wav type="audio/wav">
               Your browser does not support the audio element.
             </audio>
           </td>
@@ -324,9 +440,19 @@ h2 {
         <col width="200">
         <col width="200">
         <col width="200">
+        <col width="200">
+        <col width="200">
 
         <tr>
             <th></th>
+            <th colspan="2">WAV Blending</th>
+            <th colspan="2">Latent Blending</th>
+        </tr>
+
+        <tr>
+            <th></th>
+            <th>A</th>
+            <th>B</th>
             <th>A</th>
             <th>B</th>
         </tr>
@@ -336,33 +462,61 @@ h2 {
           <th>A</th>
             <td>
              <audio controls style="width: 200px;">
-               <source src=blending/4/0_0.wav type="audio/wav">
+               <source src=blending/wav/4/0_0.wav type="audio/wav">
                Your browser does not support the audio element.
              </audio>
            </td>
 
            <td>
             <audio controls style="width: 200px;">
-              <source src=blending/4/0_1.wav type="audio/wav">
+              <source src=blending/wav/4/0_1.wav type="audio/wav">
               Your browser does not support the audio element.
             </audio>
            </td>
+
+           <td>
+            <audio controls style="width: 200px;">
+              <source src=blending/emb/4/0_0.wav type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+          </td>
+
+          <td>
+           <audio controls style="width: 200px;">
+             <source src=blending/emb/4/0_1.wav type="audio/wav">
+             Your browser does not support the audio element.
+           </audio>
+          </td>
         </tr>
         <tr>
           <th>B</th>
             <td>
              <audio controls style="width: 200px;">
-               <source src=blending/4/1_0.wav type="audio/wav">
+               <source src=blending/wav/4/1_0.wav type="audio/wav">
                Your browser does not support the audio element.
              </audio>
            </td>
 
            <td>
             <audio controls style="width: 200px;">
-              <source src=blending/4/1_1.wav type="audio/wav">
+              <source src=blending/wav/4/1_1.wav type="audio/wav">
               Your browser does not support the audio element.
             </audio>
            </td>
+
+           <td>
+            <audio controls style="width: 200px;">
+              <source src=blending/emb/4/1_0.wav type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+          </td>
+
+          <td>
+           <audio controls style="width: 200px;">
+             <source src=blending/emb/4/1_1.wav type="audio/wav">
+             Your browser does not support the audio element.
+           </audio>
+          </td>
         </tr>
       </table>
     </div>
@@ -385,13 +539,13 @@ h2 {
         <tr>
             <td>
              <audio controls style="width: 200px;">
-               <source src=blending/5/0.wav type="audio/wav">
+               <source src=blending/wav/5/0.wav type="audio/wav">
                Your browser does not support the audio element.
              </audio>
            </td>
            <td>
             <audio controls style="width: 200px;">
-              <source src=blending/5/1.wav type="audio/wav">
+              <source src=blending/wav/5/1.wav type="audio/wav">
               Your browser does not support the audio element.
             </audio>
           </td>
@@ -401,14 +555,23 @@ h2 {
 
     <h3>Blending</h3>
     <div>
-
       <table border = "1" class="inlineTable">
+        <col width="200">
+        <col width="200">
         <col width="200">
         <col width="200">
         <col width="200">
 
         <tr>
             <th></th>
+            <th colspan="2">WAV Blending </th>
+            <th colspan="2">Latent Blending</th>
+        </tr>
+
+        <tr>
+            <th></th>
+            <th>A</th>
+            <th>B</th>
             <th>A</th>
             <th>B</th>
         </tr>
@@ -418,35 +581,427 @@ h2 {
           <th>A</th>
             <td>
              <audio controls style="width: 200px;">
-               <source src=blending/5/0_0.wav type="audio/wav">
+               <source src=blending/wav/5/0_0.wav type="audio/wav">
                Your browser does not support the audio element.
              </audio>
            </td>
 
            <td>
             <audio controls style="width: 200px;">
-              <source src=blending/5/0_1.wav type="audio/wav">
+              <source src=blending/wav/5/0_1.wav type="audio/wav">
               Your browser does not support the audio element.
             </audio>
            </td>
+
+           <td>
+            <audio controls style="width: 200px;">
+              <source src=blending/emb/5/0_0.wav type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+          </td>
+
+          <td>
+           <audio controls style="width: 200px;">
+             <source src=blending/emb/5/0_1.wav type="audio/wav">
+             Your browser does not support the audio element.
+           </audio>
+          </td>
         </tr>
         <tr>
           <th>B</th>
             <td>
              <audio controls style="width: 200px;">
-               <source src=blending/5/1_0.wav type="audio/wav">
+               <source src=blending/wav/5/1_0.wav type="audio/wav">
                Your browser does not support the audio element.
              </audio>
            </td>
 
            <td>
             <audio controls style="width: 200px;">
-              <source src=blending/5/1_1.wav type="audio/wav">
+              <source src=blending/wav/5/1_1.wav type="audio/wav">
               Your browser does not support the audio element.
             </audio>
            </td>
+
+           <td>
+            <audio controls style="width: 200px;">
+              <source src=blending/emb/5/1_0.wav type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+          </td>
+
+          <td>
+           <audio controls style="width: 200px;">
+             <source src=blending/emb/5/1_1.wav type="audio/wav">
+             Your browser does not support the audio element.
+           </audio>
+          </td>
         </tr>
       </table>
     </div>
+
+    <br/>
+    <h1>Voice Blending</h1>
+
+    <p> In order to emphasize the difference between wav-domain and latent-domain blending, we added blending experiments on the voice conversion task. </br>
+        We apply our method on 3 publicly available datasets - “Nancy” from Blizzard 2011<a href="#section1">[1]</a>, Blizzard 2013<a href="#section2">[2]</a> and LJ<a href="#section3">[3]</a> dataset. </p>
+    <p> The blended voice samples show a clear difference between the two. Samples blended in WAV space depicts a “cross-fading” effect i.e. a dominant speaker and a quite speaker are heard simultaneously. </br>
+        In contrast, blending in latent space creates the effect of natural-sounding mumbling of a single speaker. </p>
+
+    <h1>Sample No. 6 - Blizzard 2013 </h1>
+    <div>
+
+      <h3>Inputs</h3>
+      <table border = "1" class="inlineTable">
+        <col width="200">
+        <col width="200">
+
+        <tr>
+            <th>A</th>
+            <th>B</th>
+        </tr>
+
+
+        <tr>
+            <td>
+             <audio controls style="width: 200px;">
+               <source src=voice_blending/emb/0/0.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+           <td>
+            <audio controls style="width: 200px;">
+              <source src=voice_blending/emb/0/1.wav type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+          </td>
+      </table>
+
+    </div>
+
+    <h3>Blending</h3>
+    <div>
+      <table border = "1" class="inlineTable">
+        <col width="200">
+        <col width="200">
+        <col width="200">
+        <col width="200">
+        <col width="200">
+
+        <tr>
+            <th></th>
+            <th colspan="2">WAV Blending </th>
+            <th colspan="2">Latent Blending</th>
+        </tr>
+
+        <tr>
+            <th></th>
+            <th>A</th>
+            <th>B</th>
+            <th>A</th>
+            <th>B</th>
+        </tr>
+
+        <tr>
+          <th>A</th>
+            <td>
+             <audio controls style="width: 200px;">
+               <source src=voice_blending/wav/0/0_0.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+           <td>
+            <audio controls style="width: 200px;">
+              <source src=voice_blending/wav/0/0_1.wav type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+           </td>
+
+           <td>
+            <audio controls style="width: 200px;">
+              <source src=voice_blending/emb/0/0_0.wav type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+          </td>
+
+          <td>
+           <audio controls style="width: 200px;">
+             <source src=voice_blending/emb/0/0_1.wav type="audio/wav">
+             Your browser does not support the audio element.
+           </audio>
+          </td>
+        </tr>
+        <tr>
+          <th>B</th>
+            <td>
+             <audio controls style="width: 200px;">
+               <source src=voice_blending/wav/0/1_0.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+           <td>
+            <audio controls style="width: 200px;">
+              <source src=voice_blending/wav/0/1_1.wav type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+           </td>
+
+           <td>
+            <audio controls style="width: 200px;">
+              <source src=voice_blending/emb/0/1_0.wav type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+          </td>
+
+          <td>
+           <audio controls style="width: 200px;">
+             <source src=voice_blending/emb/0/1_1.wav type="audio/wav">
+             Your browser does not support the audio element.
+           </audio>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <br/>
+    <h1>Sample No. 7 - Blizzard </h1>
+    <div>
+
+      <h3>Inputs</h3>
+      <table border = "1" class="inlineTable">
+        <col width="200">
+        <col width="200">
+
+        <tr>
+            <th>A</th>
+            <th>B</th>
+        </tr>
+
+
+        <tr>
+            <td>
+             <audio controls style="width: 200px;">
+               <source src=voice_blending/emb/1/0.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+           <td>
+            <audio controls style="width: 200px;">
+              <source src=voice_blending/emb/1/1.wav type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+          </td>
+      </table>
+
+    </div>
+
+    <h3>Blending</h3>
+    <div>
+      <table border = "1" class="inlineTable">
+        <col width="200">
+        <col width="200">
+        <col width="200">
+        <col width="200">
+        <col width="200">
+
+        <tr>
+            <th></th>
+            <th colspan="2">WAV Blending </th>
+            <th colspan="2">Latent Blending</th>
+        </tr>
+
+        <tr>
+            <th></th>
+            <th>A</th>
+            <th>B</th>
+            <th>A</th>
+            <th>B</th>
+        </tr>
+
+        <tr>
+          <th>A</th>
+            <td>
+             <audio controls style="width: 200px;">
+               <source src=voice_blending/wav/1/0_0.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+           <td>
+            <audio controls style="width: 200px;">
+              <source src=voice_blending/wav/1/0_1.wav type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+           </td>
+
+           <td>
+            <audio controls style="width: 200px;">
+              <source src=voice_blending/emb/1/0_0.wav type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+          </td>
+
+          <td>
+           <audio controls style="width: 200px;">
+             <source src=voice_blending/emb/1/0_1.wav type="audio/wav">
+             Your browser does not support the audio element.
+           </audio>
+          </td>
+        </tr>
+        <tr>
+          <th>B</th>
+            <td>
+             <audio controls style="width: 200px;">
+               <source src=voice_blending/wav/1/1_0.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+           <td>
+            <audio controls style="width: 200px;">
+              <source src=voice_blending/wav/1/1_1.wav type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+           </td>
+
+           <td>
+            <audio controls style="width: 200px;">
+              <source src=voice_blending/emb/1/1_0.wav type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+          </td>
+
+          <td>
+           <audio controls style="width: 200px;">
+             <source src=voice_blending/emb/1/1_1.wav type="audio/wav">
+             Your browser does not support the audio element.
+           </audio>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <br/>
+    <h1>Sample No. 8 - LJ </h1>
+    <div>
+
+      <h3>Inputs</h3>
+      <table border = "1" class="inlineTable">
+        <col width="200">
+        <col width="200">
+
+        <tr>
+            <th>A</th>
+            <th>B</th>
+        </tr>
+
+
+        <tr>
+            <td>
+             <audio controls style="width: 200px;">
+               <source src=voice_blending/emb/2/0.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+           <td>
+            <audio controls style="width: 200px;">
+              <source src=voice_blending/emb/2/1.wav type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+          </td>
+      </table>
+
+    </div>
+
+    <h3>Blending</h3>
+    <div>
+      <table border = "1" class="inlineTable">
+        <col width="200">
+        <col width="200">
+        <col width="200">
+        <col width="200">
+        <col width="200">
+
+        <tr>
+            <th></th>
+            <th colspan="2">WAV Blending </th>
+            <th colspan="2">Latent Blending</th>
+        </tr>
+
+        <tr>
+            <th></th>
+            <th>A</th>
+            <th>B</th>
+            <th>A</th>
+            <th>B</th>
+        </tr>
+
+        <tr>
+          <th>A</th>
+            <td>
+             <audio controls style="width: 200px;">
+               <source src=voice_blending/wav/2/0_0.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+           <td>
+            <audio controls style="width: 200px;">
+              <source src=voice_blending/wav/2/0_1.wav type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+           </td>
+
+           <td>
+            <audio controls style="width: 200px;">
+              <source src=voice_blending/emb/2/0_0.wav type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+          </td>
+
+          <td>
+           <audio controls style="width: 200px;">
+             <source src=voice_blending/emb/2/0_1.wav type="audio/wav">
+             Your browser does not support the audio element.
+           </audio>
+          </td>
+        </tr>
+        <tr>
+          <th>B</th>
+            <td>
+             <audio controls style="width: 200px;">
+               <source src=voice_blending/wav/2/1_0.wav type="audio/wav">
+               Your browser does not support the audio element.
+             </audio>
+           </td>
+
+           <td>
+            <audio controls style="width: 200px;">
+              <source src=voice_blending/wav/2/1_1.wav type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+           </td>
+
+           <td>
+            <audio controls style="width: 200px;">
+              <source src=voice_blending/emb/2/1_0.wav type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+          </td>
+
+          <td>
+           <audio controls style="width: 200px;">
+             <source src=voice_blending/emb/2/1_1.wav type="audio/wav">
+             Your browser does not support the audio element.
+           </audio>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <p id="section1">[1] Simon King and Vasilis Karaiskos, “The Blizzard challenge 2011,” in Blizzard Challenge workshop, 2011. </p>
+    <p id="section2">[2] Simon King and Vasilis Karaiskos, “The Blizzard challenge 2013,” in Blizzard Challenge workshop, 2013. </p>
+    <p id="section3">[3] Keith Ito, “The LJ speech dataset,” 2017. </p>
   </body>
 </html>
